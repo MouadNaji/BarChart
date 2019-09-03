@@ -1,14 +1,58 @@
+"use strict";
+window.addEventListener("DOMContentLoaded", start);
 console.log("hej");
 
 function getNumberOfCustomers() {
   //man får et random nummer
   return Math.floor(Math.random() * 36);
 }
+const dataArray = [
+  "7",
+  "3",
+  "5",
+  "2",
+  "4",
+  "7",
+  "3",
+  "5",
+  "2",
+  "4",
+  "7",
+  "3",
+  "5",
+  "2",
+  "4",
+  "7",
+  "3",
+  "5",
+  "2",
+  "4",
+  "7",
+  "3",
+  "5",
+  "2",
+  "4",
+  "7",
+  "3",
+  "5",
+  "2",
+  "4",
+  "7",
+  "3",
+  "5",
+  "2",
+  "4",
+  "7",
+  "3",
+  "5",
+  "2",
+  "4"
+];
 
 const queueSize = getNumberOfCustomers();
 console.log(queueSize);
 
-let bar = document.querySelectorAll(".bar");
+const bar = document.querySelectorAll(".bar");
 console.log(bar);
 
 bar[0].style.height = "7rem";
@@ -51,7 +95,6 @@ bar[36].style.height = "6rem";
 bar[37].style.height = "5rem";
 bar[38].style.height = "3rem";
 bar[39].style.height = "3rem";
-
-function changeHeight() {
-  this.style.height = queueSize + "rem";
+function start() {
+  bar.pop;
 }
