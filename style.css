@@ -4,9 +4,11 @@
   margin: 4px;
   background-color: blue;
 }
+
 section {
   padding: 3rem;
   padding-top: 10rem;
   display: flex;
   flex-wrap: wrap;
+  transform: rotate(180deg);
 }
